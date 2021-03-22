@@ -25,7 +25,8 @@ export default {
   dbName: "discordCloneDB",
   type: "postgres",
   url: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
   debug: !__prod__,
-  user: "dreadarceus",
-  password: "123",
 } as Parameters<typeof createConnection>[0];
