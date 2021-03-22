@@ -24,6 +24,7 @@ export default {
   ],
   dbName: "discordCloneDB",
   type: "postgres",
+  url: process.env.DATABASE_URL,
   debug: !__prod__,
   user: "dreadarceus",
   password: "123",
